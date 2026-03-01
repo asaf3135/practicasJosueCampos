@@ -1,0 +1,64 @@
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(255, 248, 210, 0.877);
+}
+
+table,th,td{
+            border:1px solid black;
+            border-collapse: collapse;
+}
+#contenedor{
+    width:100%;
+}
+header{
+    height: 75px;
+    width: 100%;
+    background-color: rgb(125, 112, 65);
+    text-align: center;
+    line-height: 75px;
+    border-bottom: 2px solid black;
+}
+nav {
+        background-color: #863f53;
+        height: 35px;         
+        display: flex;           
+        align-items: center;
+        border-bottom: 2px solid black;             
+    }
+nav ul li{
+    float:left;
+    margin: 75px;
+
+}
+#clearfix {
+    clear: both;
+
+}
+
+.lista {
+  display: flex;            /* Alinea los LI horizontalmente */
+  gap: 26%;               /* Espacio entre cada columna */
+  list-style-position: inside; /* Mantiene el número cerca del texto */
+  padding: 0;
+}
+
+.lista li {
+  display: flex;            /* Convierte el LI en un contenedor flexible */
+  flex-direction: column;   /* Alinea texto e imagen en columna (uno abajo de otro) */
+  align-items: center;      /* Centra horizontalmente el texto y la imagen */
+  text-align: center;
+}
+
+footer{
+    height: 33px;
+    width: 100%;
+    background-color: rgb(125, 112, 65);
+    font-size:xx-small;
+}
+
+.gif1 {
+    float: left; 
+  margin-right: 20px; /* Margen para que el texto no se pegue al GIF */
+  transform: rotate(180deg);
+}
