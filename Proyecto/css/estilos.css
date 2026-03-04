@@ -56,9 +56,3 @@ footer{
     background-color: rgb(125, 112, 65);
     font-size:xx-small;
 }
-
-.gif1 {
-    float: left; 
-  margin-right: 20px; /* Margen para que el texto no se pegue al GIF */
-  transform: rotate(180deg);
-}
