@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     
 </head>
 <body>
-    <div id="contenedor">
-    <header> 
-        <h1>Ironman (tony stark)</h1>
-    </header>
-        <nav> 
-            <ul> 
-                <li><a href="#s1" style="color:crimson" >Historia</a></li>
-                <li><a href="#s2" style="color:darkgoldenrod" >Información</a></li> 
-                <li><a href="#s3" style="color:crimson" >Ficha técnica</a></li> 
-                <li><a href="#s4" style="color:darkgoldenrod" >Registro de fans</a></li>
-                <li><a href="#s5" style="color:crimson" >Galería</a></li> 
+    <header class="header"> 
+        <h1 class="titulo">Ironman (tony stark)</h1>
+         <nav class="nav"> 
+            <ul class="menu"> 
+                <li><a class="link" href="#s1">Historia</a></li>
+                <li><a class="link" href="#s2">Información</a></li> 
+                <li><a class="link" href="#s3">Ficha técnica</a></li> 
+                <li><a class="link" href="#s4">Registro de fans</a></li>
+                <li><a class="link" href="#s5">Galería</a></li> 
             </ul> 
         </nav>
-        <div id="clearfix"></div>
-    <main> 
-        <section> 
-            <h2 align="center" id="s1">Historia</h2>
+    </header>
+    <main id="contenedor"> 
+        <section class="seccion"> 
+            <h2 align="center" id="s1" class="subtitulo">Historia</h2>
             <hr>
             <p>Iron Man, antes también conocido como El Hombre de Hierro
             en español,es un superhéroe que aparece en los 
@@ -61,12 +62,12 @@
             gubernamental.​Las versiones posteriores de Iron Man han pasado de estos
             motivos a asuntos contemporáneos de la época,como el terrorismo, la 
             corrupción y la delincuencia en general.</p>
-            <p>Para informacion mas concreta visite este sitio web:<a href="https://es.wikipedia.org/wiki/Iron_Man" style="color:crimson">Informacion de iron man XD</a></p>
+            <p>Para informacion mas concreta visite este sitio web:<a href="https://es.wikipedia.org/wiki/Iron_Man">Informacion de iron man XD</a></p>
             <hr>
  
         </section> 
          
-        <section class="informacion"> 
+        <section class="seccion"> 
             <h2 align="center" id="s2">Información</h2>
             <h3>Habilidades</h3>
             <ul>
@@ -96,11 +97,11 @@
             <hr>
         </section>       
                  
-        <section> 
+        <section class="seccion"> 
             <h2 align="center" id="s3">Ficha técnica</h2>
-            <table align="center">
+            <table class="tabla-moderna">
                 <caption>Datos de iron man</caption>
-                <tr bgcolor="crimson">
+                <tr>
                     <th>Edad</th>
                     <th>Peso</th>
                     <th>Estatura</tH>
@@ -108,7 +109,7 @@
                     <th>Debilidades</th>
                     <th>Alias</th>
                 </tr>
-                <tr bgcolor="darkgoldenrod">
+                <tr>
                     <td>53 años (en su ultima aparicion)</td>
                     <td>200kg(con armadura)</td>
                     <td>1.96m</td>
@@ -118,9 +119,9 @@
                 </tr>
             </table>
             <br>
-            <table align="center">
+            <table class="tabla-moderna">
                 <caption>Datos de Robert Downey Jr.</caption>
-                <tr bgcolor="crimson">
+                <tr>
                     <th>Edad</th>
                     <th>Peso</th>
                     <th>Estatura</tH>
@@ -128,7 +129,7 @@
                     <th>Curiosidades</th>
                     <th>Nombre completo </th>
                 </tr>
-                <tr bgcolor="darkgoldenrod">
+                <tr>
                     <td>60 años</td>
                     <td>78kg</td>
                     <td>1.72m</td>
@@ -139,7 +140,7 @@
             </table> 
         </section>  
         <hr>        
-        <section> 
+        <section class="seccion"> 
             <h2 align="center" id="s4">Registro de fans</h2>
             <form align="center">
                 <legend><h3>SI eres un friki de iron man  llena el formulario</h3></legend>
@@ -163,20 +164,41 @@
             </form> 
         </section> 
         <hr>    
-        <section> 
-            <h2 align="center" id="s5">Galería</h2>
-            <table align="center" border="1" cellpadding="5">
-        <tr bgcolor="gray">
-            <td><img src="img/iron1.jpg" alt="Imagen 1" width="200"></td>
-            <td><img src="img/irona.jpg" alt="Imagen 2" width="200"></td>
-            <td><img src="img/irona2.jpg" alt="Imagen 3" width="200"></td>
-        </tr>
-        <tr bgcolor="gray">
-            <td><img src="img/iron4.jpg" alt="Imagen 4" width="200"></td>
-            <td><img src="img/iron5.jpg" alt="Imagen 5" width="200"></td>
-            <td><img src="img/iron6.jpg" alt="Imagen 6" width="200"></td>
-        </tr>
-    </table>
+       <section class="seccion">
+    <h2 align="center" id="s5">Galería</h2>
+    <hr>
+    <div class="galeria-contenedor">
+        <div class="galeria-card">
+            <img src="img/iron1.jpg" alt="Mark 43">
+            <p class="galeria-texto">Mark 43</p>
+        </div>
+
+        <div class="galeria-card">
+            <img src="img/irona.jpg" alt="Mark 50">
+            <p class="galeria-texto">Mark 50</p>
+        </div>
+
+        <div class="galeria-card">
+            <img src="img/irona2.jpg" alt="Mark 7">
+            <p class="galeria-texto">Mark 7</p>
+        </div>
+
+        <div class="galeria-card">
+            <img src="img/iron4.jpg" alt="Hulkbuster">
+            <p class="galeria-texto">Hulkbuster</p>
+        </div>
+
+        <div class="galeria-card">
+            <img src="img/iron5.jpg" alt="Mark 85">
+            <p class="galeria-texto">Mark 85</p>
+        </div>
+
+        <div class="galeria-card">
+            <img src="img/iron6.jpg" alt="Imagen 6: Mark 3">
+            <p class="galeria-texto">Mark 3</p>
+        </div>
+    </div>
+</section>
 
         </section> 
     </main> 
@@ -184,6 +206,6 @@
         <p>Creado por Josue Campos</p> 
         <p>© Todos los derechos reservados</p> 
     </footer> 
-</div>
+
 </body>
 </html>
